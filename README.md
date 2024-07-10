@@ -28,22 +28,23 @@ This project aims to provide a hands-free control system for wheelchair users by
 
 ### Steps
 1. Clone the repository:
-   ```git clone https://github.com/vishavmehra/eye-controlled-wheelchair.git
-   cd eye-controlled-wheelchair```
+   ```git clone https://github.com/vishavmehra/eye-controlled-wheelchair.git```
+   ```cd eye-controlled-wheelchair```
 2. Create and activate a new conda environment:
-   ```conda create -n eye-controlled-wheelchair python=3.8
-   conda activate eye-controlled-wheelchair```
+   ```conda create -n eye-controlled-wheelchair python=3.8```
+   ```conda activate eye-controlled-wheelchair```
 3. Install the required packages:
    ```pip install -r requirements.txt```
 4. Download the pre-trained facial landmark predictor model:
-   ```wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
-  bunzip2 shape_predictor_68_face_landmarks.dat.bz2```
+   ```wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2```
+  ```bunzip2 shape_predictor_68_face_landmarks.dat.bz2```
 
  ### Usage
  1. Run the main application:
    ```python main.py```
  2. Use the GUI to create a dataset, train the model, and start/stop the camera and detection processes.
  ### File Structure
+```
 ├── dataset/                  # Directory for storing the dataset
 ├── images/                   # Directory for storing arrow images used in the GUI
 ├── MainWindow_gui.ui         # UI file for the main window
