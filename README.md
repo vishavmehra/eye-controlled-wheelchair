@@ -28,11 +28,11 @@ This project aims to provide a hands-free control system for wheelchair users by
 
 ### Steps
 1. Clone the repository:
-   git clone https://github.com/yourusername/wheelchair-control-system.git
-   cd wheelchair-control-system
+   git clone https://github.com/vishavmehra/eye-controlled-wheelchair.git
+   cd eye-controlled-wheelchair
 2. Create and activate a new conda environment:
-   conda create -n wheelchair_control python=3.8
-   conda activate wheelchair_control
+   conda create -n eye-controlled-wheelchair python=3.8
+   conda activate eye-controlled-wheelchair
 3. Install the required packages:
    pip install -r requirements.txt
 4. Download the pre-trained facial landmark predictor model:
