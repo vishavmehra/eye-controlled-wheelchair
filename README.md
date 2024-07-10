@@ -75,4 +75,4 @@ Scikit-image
 Scikit-learn
 
 It also contains multiple scripts for better understanding of the codeflow which was then incorporated into one class in the final algorithm.
-Feel free to contribute to this project by opening issues or submitting pull requests. For any questions or feedback, please contact mehravishav@gmail.com.
+Feel free to contribute to this project by opening issues or submitting pull requests. For any questions or feedback, please contact mehravishav26@gmail.com.
