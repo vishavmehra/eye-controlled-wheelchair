@@ -28,38 +28,23 @@ This project aims to provide a hands-free control system for wheelchair users by
 
 ### Steps
 1. Clone the repository:
-   ```sh
    git clone https://github.com/yourusername/wheelchair-control-system.git
    cd wheelchair-control-system
-Create and activate a new conda environment:
+2. Create and activate a new conda environment:
+   conda create -n wheelchair_control python=3.8
+   conda activate wheelchair_control
+3. Install the required packages:
+   pip install -r requirements.txt
+4. Download the pre-trained facial landmark predictor model:
+   wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+   bunzip2 shape_predictor_68_face_landmarks.dat.bz2
 
-sh
-Copy code
-conda create -n wheelchair_control python=3.8
-conda activate wheelchair_control
-Install the required packages:
-
-sh
-Copy code
-pip install -r requirements.txt
-Download the pre-trained facial landmark predictor model:
-
-sh
-Copy code
-wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
-bunzip2 shape_predictor_68_face_landmarks.dat.bz2
-Usage
-Run the main application:
-
-sh
-Copy code
-python main.py
-Use the GUI to create a dataset, train the model, and start/stop the camera and detection processes.
-
-File Structure
-perl
-Copy code
-wheelchair-control-system/
+ ### Usage
+ 1. Run the main application:
+    python main.py
+ 2. Use the GUI to create a dataset, train the model, and start/stop the camera and detection processes.
+ ### File Structure
+    wheelchair-control-system/
 │
 ├── dataset/                  # Directory for storing the dataset
 ├── images/                   # Directory for storing arrow images used in the GUI
@@ -69,27 +54,26 @@ wheelchair-control-system/
 ├── requirements.txt          # List of required packages
 ├── shape_predictor_68_face_landmarks.dat  # Pre-trained facial landmark predictor
 └── README.md                 # This README file
-Dependencies
-Python 3.7 or higher
-OpenCV
-PyQt5
-Dlib
-Imutils
-Scikit-image
-Scikit-learn
-Winsound
-PyWin32
-You can install the required packages using the provided requirements.txt file.
 
-Credits
+### Dependencies
+1. Python 3.7 or higher
+2. OpenCV
+3. PyQt5
+4. Dlib
+5. Imutils
+6. Scikit-image
+7. Scikit-learn
+8. Winsound
+9. PyWin32
+
+### Credits
 This project was developed using the following libraries and resources:
-
 OpenCV
 Dlib
 PyQt5
 Imutils
 Scikit-image
 Scikit-learn
-Special thanks to the developers and contributors of these projects.
+
 It also contains multiple scripts for better understanding of the codeflow which was then incorporated into one class in the final algorithm.
 Feel free to contribute to this project by opening issues or submitting pull requests. For any questions or feedback, please contact mehravishav@gmail.com.
